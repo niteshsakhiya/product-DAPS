@@ -25,7 +25,7 @@ omejdn:
   # -- Server key content. DAPS will generate key if it's not provided at startup
   serverKey: ""
   # -- Default user and client will be created if set to `true`. User credentials set in `omejdn.defaultAdminUser` section
-  createDefaultAdmin: false
+  createDefaultAdmin: true
   # -- Default user credentials in format `user:password`
   defaultAdminUser: "admin:admin"
 
