@@ -79,7 +79,7 @@ ingress:
     enabled: true
     certMgr:
       # -- If `true` cert-manager will be used to issue a certificate with ingress.host CN name
-      enabled: true
+      enabled: false
       # -- Cert-manager issuer name
       issuer: "letsencrypt-prod"
 
