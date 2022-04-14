@@ -28,7 +28,7 @@ spec:
         - {{ .Values.ingress.host }}
       secretName: "{{ include "omejdn-server.fullname" . }}-tls"
   {{- end }}
-  ingressClassName: service
+  ingressClassName: nginx
   rules:
   - host: {{ .Values.ingress.host }}
     http:
@@ -69,7 +69,7 @@ metadata:
     cert-manager.io/issuer: {{ .Values.ingress.tls.certMgr.issuer }}
     {{- end }}
 spec:
-  ingressClassName: service
+  ingressClassName: nginx
   rules:
     - host: {{ .Values.ingress.host }}
       http:
