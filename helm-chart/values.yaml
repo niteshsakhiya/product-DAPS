@@ -102,10 +102,10 @@ env:
 resources:
   limits:
     cpu: 200m
-    memory: 100Mi
+    memory: 150Mi
   requests:
     cpu: 200m
-    memory: 100Mi
+    memory: 150Mi
 
 # -- DAPS autoscaling configuration
 autoscaling:
