@@ -71,7 +71,7 @@ ingress:
   # -- Ingress host name
   host: daps.int.demo.catena-x.net
   # -- Path prefix to be added to DAPS URI. Regex can be used
-  pathPrefix: "(/|$)(.*)"
+  pathPrefix: "/(/|$)(.*)"
   # -- Root prefix without regex rules that used to configure daps host name in configuration
   rootPath: "/"
   tls:
