@@ -73,7 +73,7 @@ ingress:
   # -- Path prefix to be added to DAPS URI. Regex can be used
   pathPrefix: "/"
   # -- Root prefix without regex rules that used to configure daps host name in configuration
-  rootPath: "/"
+  rootPath: ""
   tls:
     # -- If `true` daps will be exposed with https
     enabled: true
