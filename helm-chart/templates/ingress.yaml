@@ -34,7 +34,7 @@ spec:
     http:
       paths:
       - path: {{ default "/" .Values.ingress.pathPrefix | quote }}
-        pathType: ImplementationSpecific
+        pathType: Prefix
         backend:
           {{- if semverCompare ">=1.20-0" .Capabilities.KubeVersion.GitVersion }}
           service:            
