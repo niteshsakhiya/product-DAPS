@@ -27,7 +27,7 @@ omejdn:
   # -- Default user and client will be created if set to `true`. User credentials set in `omejdn.defaultAdminUser` section
   createDefaultAdmin: true
   # -- Default user credentials in format `user:password`
-  defaultAdminUser: "<path:portal/data/dev/daps#adminuser>"
+  defaultAdminUser: "admin:admin"
 
 
 serviceAccount:
@@ -96,8 +96,8 @@ env:
   # -- Additional env variables
   config: {}
   # -- Additional env variables that should be stored in encrypted way
-  secret: {}
-    # OMEJDN_ADMIN: "<path:portal/data/dev/daps#adminuser>"
+  secret:
+    OMEJDN_ADMIN: "<path:portal/data/dev/daps#adminuser>"
 
 # -- Pod resources requests and limits configuration
 resources:
