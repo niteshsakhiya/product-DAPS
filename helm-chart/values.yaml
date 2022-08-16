@@ -25,7 +25,7 @@ omejdn:
   # -- Server key content. DAPS will generate key if it's not provided at startup
   serverKey: ""
   # -- Default user and client will be created if set to `true`. User credentials set in `omejdn.defaultAdminUser` section
-  createDefaultAdmin: true
+  createDefaultAdmin: false
   # -- Default user credentials in format `user:password`
   defaultAdminUser: "admin:admin"
 
@@ -69,7 +69,7 @@ ingress:
   #  kubernetes.io/ingress.class: nginx
   #  kubernetes.io/tls-acme: "true"
   # -- Ingress host name
-  host: daps.int.demo.catena-x.net
+  host: daps.int.demo.ftcpro.co
   # -- Path prefix to be added to DAPS URI. Regex can be used
   pathPrefix: "/"
   # -- Root prefix without regex rules that used to configure daps host name in configuration
@@ -88,7 +88,7 @@ persistence:
   # -- If `true` persistent volume will be used to store clients and users configuration
   enabled: true
   # -- Storage class to claim a volume.
-  storageClass: "azurefile"
+  storageClass: "local-storage"
   # -- Volume size
   storageSize: "1Gi"
 
@@ -96,7 +96,9 @@ env:
   # -- Additional env variables
   config: {}
   # -- Additional env variables that should be stored in encrypted way
-  secret: {}    
+  secret:
+  - name: OMEJDN_ADMIN
+    value: "<path:portal/data/dev/daps#adminuser>"  
 
 # -- Pod resources requests and limits configuration
 resources:
