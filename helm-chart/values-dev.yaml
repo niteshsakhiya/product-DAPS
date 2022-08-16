@@ -1,5 +1,5 @@
 ingress:
-  host: daps.dev.demo.catena-x.net
+  host: daps.dev.demo.ftcpro.co
 
 resources:
   limits:
@@ -8,3 +8,8 @@ resources:
   requests:
     cpu: 400m
     memory: 600Mi
+
+persistence:
+  enabled: true
+  storageClass: "local-storage"
+  storageSize: "1Gi"
