@@ -13,3 +13,11 @@ persistence:
   enabled: true
   storageClass: "local-storage"
   storageSize: "1Gi"
+
+omejdn:
+  createDefaultAdmin: false
+
+env:
+  secret:
+  - name: OMEJDN_ADMIN
+    value: "<path:portal/data/dev/daps#adminuser>"
