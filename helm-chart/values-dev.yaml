@@ -15,9 +15,9 @@ persistence:
   storageSize: "1Gi"
 
 omejdn:
-  createDefaultAdmin: false
+  createDefaultAdmin: true
 
-env:
-  secret:
-  - name: OMEJDN_ADMIN
-    value: "<path:portal/data/dev/daps#adminuser>"
+# env:
+#   secret:
+#   - name: OMEJDN_ADMIN
+#     value: "<path:portal/data/dev/daps#adminuser>"
