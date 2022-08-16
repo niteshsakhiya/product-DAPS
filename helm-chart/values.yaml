@@ -69,7 +69,7 @@ ingress:
   #  kubernetes.io/ingress.class: nginx
   #  kubernetes.io/tls-acme: "true"
   # -- Ingress host name
-  host: daps.int.demo.ftcpro.co
+  host: daps.dev.demo.ftcpro.co
   # -- Path prefix to be added to DAPS URI. Regex can be used
   pathPrefix: "/"
   # -- Root prefix without regex rules that used to configure daps host name in configuration
