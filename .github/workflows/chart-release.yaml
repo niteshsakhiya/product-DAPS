@@ -1,4 +1,4 @@
-name: Release core Chart
+name: Release helm Chart
 
 on:
   workflow_dispatch:
