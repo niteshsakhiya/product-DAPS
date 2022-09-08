@@ -4,6 +4,22 @@
 
 DAPS server helm-chart
 
+Omejdn is a minimal but extensible OAuth 2.0/OpenID connect server used for ...
+
+IoT devices which use their private keys to request OAuth2 access tokens in order to access protected resources
+Websites or apps which retrieve user attributes
+It is used as the Dynamic Attribute Provisioning Service (DAPS) prototype of the Industrial Data Space.
+
+Some of Omejdn's core features include:
+
+Database-free easy-to-read configuration files
+Integration of existing LDAP directory services
+Fully configurable through the Admin API Plugin
+A User Selfservice API Plugin
+Standard Compliance (see below)
+IMPORTANT: Omejdn is meant to be a research sandbox in which we can (re)implement standard protocols and potentially extend and modify functionality under the hood to support research projects. Use at your own risk! At a minimum, take a look at the documentation for production setups.
+
+
 ## Values
 
 | Key | Type | Default | Description |
