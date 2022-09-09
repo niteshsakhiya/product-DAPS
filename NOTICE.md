@@ -25,7 +25,7 @@ SPDX-License-Identifier: Apache-2.0
 The project maintains the following source code repositories 
 in the GitHub organization https://github.com/catenax-ng:
 
-* https://github.com/catenax-ng/product-sd-hub
+* https://github.com/catenax-ng/product-DAPS
 
 
 ## Third-party Content
