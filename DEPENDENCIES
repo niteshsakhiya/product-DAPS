@@ -1,5 +1,1 @@
-actions/checkout@v2
-docker/metadata-action@v4
-docker/login-action@v1
-docker/build-push-action@v3
-docker/metadata-action@v4
+Fraunhofer omejdn
