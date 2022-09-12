@@ -3,6 +3,8 @@
 To install DAPS 1.7.1 version, follow below steps:- 
 
 git clone -b fetaure/dapsUpgrade https://github.com/catenax-ng/product-DAPS.git
+
+
 helm install dapsName helmchartDirectory/  -n NameSpace
 
 
