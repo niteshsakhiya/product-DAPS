@@ -76,7 +76,7 @@ ingress:
   rootPath: "/"
   tls:
     # -- If `true` daps will be exposed with https
-    enabled: true
+    enabled: false
 
     certMgr:
       # -- If `true` cert-manager will be used to issue a certificate with ingress.host CN name
