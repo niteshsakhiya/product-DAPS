@@ -86,9 +86,9 @@ data:
   {{- if .Values.omejdn.createDefaultAdmin }}
   clients.yml: |-
     ---
-    - client_id: {{ .Values.daps.client_id }}
+    - client_id: {{ .Values.env.daps.client_id }}
       name: omejdn admin ui
-      client_secret: {{ .Values.daps.client_secret }}
+      client_secret: {{ .Values.env.daps.client_secret }}
       token_endpoint_auth_method: client_secret_post
       attributes:
       - key: omejdn
