@@ -22,6 +22,8 @@ ingress:
       issuer: "letsencrypt-prod"
 
 daps:
+  client_id: admin
+  client_secret: beta@catenax
   secret:
     clientId: "<path:essential-services/data/daps-beta#clientId>"
     clientSecret: "<path:essential-services/data/daps-beta#clientSecret>"
