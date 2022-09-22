@@ -20,7 +20,10 @@ ingress:
       enabled: true
       # -- Cert-manager issuer name
       issuer: "letsencrypt-prod"
-
+env:
+  daps:
+    clientid: admin
+    clientsecret: beta@catenax
 daps:
   secret:
     clientId: "<path:essential-services/data/daps-beta#clientId>"
