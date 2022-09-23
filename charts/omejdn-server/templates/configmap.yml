@@ -86,9 +86,9 @@ data:
   {{- if .Values.omejdn.createDefaultAdmin }}
   clients.yml: |-
     ---
-    - client_id: {{ (lookup "v1" "Secret" ".Release.Namespace" "avp-daps-secret").data.ClientID | b64dec }}
+    - client_id: user
       name: omejdn admin ui
-      client_secret: {{ (lookup "v1" "Secret" ".Release.Namespace" "avp-daps-secret").data.ClientSecret | b64dec }}
+      client_secret: catenax
       token_endpoint_auth_method: client_secret_post
       attributes:
       - key: omejdn
