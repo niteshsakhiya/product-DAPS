@@ -126,16 +126,6 @@ spec:
                 name: {{ $fullName }}
                 key: {{ $key }}
           {{- end}}
-          - name: ENV_DAPS_CLIENTID
-            valueFrom: 
-              secretKeyRef:
-                name: avp-daps-secret
-                key: ClientID
-          - name: ENV_DAPS_CLIENTSECRET
-            valueFrom: 
-              secretKeyRef:
-                name: avp-daps-secret
-                key: ClientSecret
           ports:
             - name: http
               containerPort: 4567
