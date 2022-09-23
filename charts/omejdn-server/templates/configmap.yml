@@ -86,7 +86,7 @@ data:
   {{- if .Values.omejdn.createDefaultAdmin }}
   clients.yml: |-
     ---
-    - client_id: user
+    - client_id: admin
       name: omejdn admin ui
       client_secret: catenax
       token_endpoint_auth_method: client_secret_post
