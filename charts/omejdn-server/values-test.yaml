@@ -6,7 +6,7 @@ ingress:
   #  kubernetes.io/ingress.class: nginx
   #  kubernetes.io/tls-acme: "true"
   # -- Ingress host name
-  host: dapstest1.int.demo.catena-x.net
+  host: dapstest.int.demo.catena-x.net
   # -- Path prefix to be added to DAPS URI. Regex can be used
   pathPrefix: "/"
   # -- Root prefix without regex rules that used to configure daps host name in configuration
@@ -21,10 +21,7 @@ ingress:
       # -- Cert-manager issuer name
       issuer: "letsencrypt-prod"
 
-resources:
-  limits:
-    cpu: 400m
-    memory: 600Mi
-  requests:
-    cpu: 400m
-    memory: 600Mi
+daps:
+  secret:
+    clientId: "<path:essential-services/data/daps-beta#clientId>"
+    clientSecret: "<path:essential-services/data/daps-beta#clientSecret>"
