@@ -88,7 +88,7 @@ persistence:
   # -- If `true` persistent volume will be used to store clients and users configuration
   enabled: true
   # -- Storage class to claim a volume.
-  storageClass: "azurefile-retain"
+  storageClass: "azurefile"
   # -- Volume size
   storageSize: "1Gi"
 
