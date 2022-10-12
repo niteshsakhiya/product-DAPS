@@ -125,7 +125,7 @@ tolerations: []
 # -- Pod affinity configuration
 affinity: {}
 
-daps:
-  secret:
-    clientId: ""
-    clientSecret: ""
+# daps:
+#   secret:
+#     clientId: ""
+#     clientSecret: ""
