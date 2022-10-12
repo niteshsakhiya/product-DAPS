@@ -22,3 +22,8 @@ omejdn:
 #   secret:
 #   - name: OMEJDN_ADMIN
 #     value: "<path:portal/data/dev/daps#adminuser>"
+
+daps:
+  secret:
+    clientId: "<path:portal/data/dev/daps#clientId>"
+    clientSecret: "<path:portal/data/dev/daps#clientSecret>"
