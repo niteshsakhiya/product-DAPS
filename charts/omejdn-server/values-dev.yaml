@@ -1,4 +1,5 @@
 ingress:
+  enabled: true
   host: daps.dev.demo.ftcpro.co
 
 resources:
@@ -6,7 +7,7 @@ resources:
     cpu: 2
     memory: 1024Mi
   requests:
-    cpu: 400m
+    cpu: 10m
     memory: 60Mi
 
 persistence:
