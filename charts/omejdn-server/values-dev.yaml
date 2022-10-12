@@ -1,6 +1,11 @@
 ingress:
   enabled: true
   host: daps.dev.demo.ftcpro.co
+  tls:
+    enabled: true
+    certMgr:
+      enabled: true
+      issuer: "letsencrypt-prod"
 
 resources:
   limits:
