@@ -1,0 +1,23 @@
+ingress:
+  host: daps.dev.demo.ftcpro.co
+
+resources:
+  limits:
+    cpu: 2
+    memory: 1024Mi
+  requests:
+    cpu: 400m
+    memory: 60Mi
+
+persistence:
+  enabled: true
+  storageClass: "local-storage"
+  storageSize: "1Gi"
+
+omejdn:
+  createDefaultAdmin: true
+
+# env:
+#   secret:
+#   - name: OMEJDN_ADMIN
+#     value: "<path:portal/data/dev/daps#adminuser>"
